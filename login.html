@@ -7,92 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-
-    <style>
-        *{
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-        
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            align-items: center;
-        }
-
-        input {
-            background-color: rgb(230, 238, 255);
-            border-style: solid;
-            border-color: lightgray;
-
-            width: 350px;
-            height: 30px;
-            margin: 10px 0px 5px 0px;
-        }
-
-        .top_line {
-            background-color: rgb(10, 87, 56);
-            margin: 0;
-            height: 30px;
-        }
-
-        .page_name {
-            display: grid;
-            grid-template-columns: 5fr 6fr;
-
-            font-size: 30px;
-            line-height:55px;
-            padding: 80px 0px 15px 0px;
-
-        }
-
-        .symbol {
-            text-align: end;
-            padding-right: 20px;
-        }
-
-        .login_wrapper {
-            display: grid;
-            grid-template-columns: 4fr 3fr;
-            padding: 50px 100px 80px 100px;
-
-            border-style: solid;
-            border-width: 1px;
-            width: 800px;
-            height: 120px;
-        }
-
-        .login_button {
-            background-color: rgb(10, 87, 56);
-            color: white;
-            font-size: 110%;
-
-            margin: 4px 0px 0px 2px;
-            width: 130px;
-            height: 90px;
-            border-style: solid;
-            border-color: rgb(10, 87, 56);
-            border-radius: 3px;
-        }
-
-        .login_input{
-            display:
-        }
-
-        .id_input {
-            display: grid;
-            grid-template-columns: 1fr 4fr;
-
-            block-size: 25px;
-            margin: 0px 0px 20px 0px;
-        }
-
-        .pw_input {
-            display: grid;
-            grid-template-columns: 1fr 4fr;
-
-            block-size: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="login_style.css">
 </head>
 
 <body>
@@ -105,18 +20,27 @@
             EWHA LOGIN
         </div>
     </div>
-    <div class="login_wrapper">
-        <div class="login_input">
-            <div class="id_input">
-                <p>ID</p>
-                <input type="text">
+    <div class="lgBox">
+        <div class="login_wrapper">
+            <div class="login_input">
+                <div class="id_input">
+                    <p>ID</p>
+                    <input type="text">
+                </div>
+                <div class="pw_input">
+                    <p>Password</p>
+                    <input type="text">
+                </div>
             </div>
-            <div class="pw_input">
-                <p>Password</p>
-                <input type="text">
+            <button name="login" type="button" class="login_button">Log in</button>
+            <div class="options">
+                <button name="save_id" type="button">Save ID</button>
+                |
+                <button name="Find" type="button">Find ID/Password</button>
+                |
+                <button name="Certificate" type="button">Certificate Login</button>
             </div>
         </div>
-        <button name="login" type="button" class="login_button">Log in</button>
     </div>
 
 </body>

@@ -1,0 +1,87 @@
+* {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+input {
+  background-color: rgb(241, 245, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+
+  width: 350px;
+  height: 37px;
+  margin: 10px 0px 5px 0px;
+}
+
+.top_line {
+  background-color: rgb(10, 87, 56);
+  margin: 0;
+  height: 30px;
+}
+
+.page_name {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+
+  font-size: 30px;
+  line-height: 55px;
+  padding: 80px 0px 15px 0px;
+}
+
+.symbol {
+  text-align: end;
+  padding-right: 20px;
+}
+
+.lgBox {
+  display: block;
+  margin: 0 auto;
+
+  border-style: solid;
+  border-width: 1px;
+  width: 1000px;
+  height: 250px;
+}
+
+.login_wrapper {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  margin: 50px 0px 80px 190px;
+}
+
+.login_button {
+  background-color: rgb(10, 87, 56);
+  color: white;
+  font-size: 110%;
+
+  margin: 10px 0px 0px 2px;
+  width: 130px;
+  height: 90px;
+  border-style: solid;
+  border-color: rgb(10, 87, 56);
+  border-radius: 3px;
+}
+
+.id_input {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  block-size: 25px;
+  margin: 0px 0px 25px 0px;
+}
+
+.pw_input {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  block-size: 15px;
+}
+
+.options {
+  padding: 15px 0px 0px 100px;
+}
