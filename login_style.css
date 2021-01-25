@@ -85,3 +85,40 @@ input {
 .options {
   padding: 15px 0px 0px 100px;
 }
+
+@media (max-width: 800px) {
+  input {
+    width: 450px;
+    height: 37px;
+    margin: 10px 0px 5px 0px;
+  }
+
+  .page_name {
+    font-size: 23px;
+  }
+
+  .login_button {
+    font-size: 100%;
+    width: 70px;
+  }
+
+  .lgBox {
+    width: 95%;
+    height: 173px;
+  }
+
+  .login_wrapper {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    margin: 20px 0px 80px 20px;
+  }
+
+  .id_input {
+    block-size: 20px;
+    margin: 0px 0px 25px 0px;
+  }
+
+  .options {
+    text-align: center;
+  }
+}
