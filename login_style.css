@@ -83,23 +83,48 @@ input {
 }
 
 .options {
-  padding: 15px 0px 0px 100px;
+  padding: 0px 0px 0px 100px;
+  color: rgb(90, 90, 90);
+  width: 95%;
+  margin-top: -15px;
+}
+
+#save_id {
+  width: 15px;
+  cursor: pointer;
+  position: relative;
+  top: 13px;
+  right: 2px;
+}
+
+.options button {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(90, 90, 90);
+  font-size: 95%;
+  border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
   input {
-    width: 450px;
+    width: 90%;
     height: 37px;
-    margin: 10px 0px 5px 0px;
+    margin: 10px 0px 5px 30px;
+  }
+
+  .top_line {
+    height: 15px;
   }
 
   .page_name {
+    padding: 40px 0px 5px 0px;
     font-size: 23px;
   }
 
   .login_button {
     font-size: 100%;
     width: 70px;
+    margin-right: 10px;
   }
 
   .lgBox {
@@ -110,15 +135,20 @@ input {
   .login_wrapper {
     display: grid;
     grid-template-columns: 6fr 1fr;
-    margin: 20px 0px 80px 20px;
+    margin: 15px 0px 80px 15px;
   }
 
   .id_input {
     block-size: 20px;
     margin: 0px 0px 25px 0px;
   }
+}
 
-  .options {
-    text-align: center;
+@media (max-width: 540px) {
+  .lgBox {
+    height: 200px;
+  }
+  input {
+    width: 85%;
   }
 }

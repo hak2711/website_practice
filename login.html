@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="login_option.js"></script>
 </head>
 
 <body>
@@ -34,11 +36,11 @@
             </div>
             <button name="login" type="button" class="login_button">Log in</button>
             <div class="options">
-                <button name="save_id" type="button">Save ID</button>
+                <label for="save_id" style="cursor:pointer"><input type="checkbox" id="save_id"/>Save ID</label>
                 |
-                <button name="Find" type="button">Find ID/Password</button>
+                <button name="Find" type="button" onclick="window.open('https://sso.ewha.ac.kr/SSO_IDP/swift/sso/find/pass.jsp?searchFlag=PW','popup','width=600,height=600'); return false;">Find ID/Password</button>
                 |
-                <button name="Certificate" type="button">Certificate Login</button>
+                <button name="Certificate" type="button" onclick="certificateLogin();">Certificate Login</button>
             </div>
         </div>
     </div>
