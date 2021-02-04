@@ -2,7 +2,7 @@
 web front practicing by making a simple website
 
 
-###Login page
+### Login page
 
 1. html base
 2. css - base constructure
@@ -11,6 +11,6 @@ web front practicing by making a simple website
 5. ccs - mediaquery
 6. ccs - link options
 
-###Main page
+### Main page
 
 1. base - link to login page
