@@ -1,6 +1,7 @@
 # website_practice
 web front practicing by making a simple website
 
+link : https://hak2711.github.io/website_practice/
 
 ### Login page
 
